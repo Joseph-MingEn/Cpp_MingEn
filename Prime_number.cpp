@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(void) {
-    int n = 1000000;
+    int n = 1000;
 
     bool notprime [n+1] = {};
     notprime[0] = notprime[1] = true;
