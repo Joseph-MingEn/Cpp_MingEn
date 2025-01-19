@@ -1,4 +1,10 @@
 {
+    "code-runner.runInTerminal": true,
+
+    "[cpp]": {
+        "files.encoding": "cp950"
+    },
+
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
