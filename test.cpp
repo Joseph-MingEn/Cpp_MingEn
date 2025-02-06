@@ -2,7 +2,15 @@
 using namespace std;
 
 int main() {
-    cout << "Ò\¦W®¦";
+    // ios::sync_with_stdio(0);
+    // cin.tie(0);
+    long long int i, j;
+
+    while(cin >> i >> j) {
+        cout << abs(i - j);
+
+    }
 
     return 0;
-    }
+
+}
