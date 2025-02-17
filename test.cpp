@@ -2,17 +2,6 @@
 using namespace std;
 
 int main() {
-    // ios::sync_with_stdio(0);
-    // cin.tie(0);
-    long long int i, j;
-
-    while(cin >> i >> j) {
-        cout << i << '\t' << j << '\n';
-        swap(i, j);
-        cout << i << '\t' << j << '\n';
-
-    }
-
+    cout << "Ò\¦W®¦" << endl;
     return 0;
-
 }
