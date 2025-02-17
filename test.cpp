@@ -7,7 +7,9 @@ int main() {
     long long int i, j;
 
     while(cin >> i >> j) {
-        cout << abs(i - j);
+        cout << i << '\t' << j << '\n';
+        swap(i, j);
+        cout << i << '\t' << j << '\n';
 
     }
 
