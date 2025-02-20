@@ -41,6 +41,7 @@ int main() {
     string test4 = "([)]";    // false
     string test5 = "{[]}";    // true
     
+    cout << "HI" << endl;
     cout << boolalpha; // Åı cout ¿é¥X true/false
     cout << sol.isValid(test1) << endl;
     cout << sol.isValid(test2) << endl;
