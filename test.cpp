@@ -11,10 +11,10 @@ void hallo(string s) {
 
 int main() {
     double fahrenheit;
-    cout << "???????: ";
+    cout << "請輸入華氏溫度: ";
     cin >> fahrenheit;
     double celsius = fahrenheitToCelsius(fahrenheit);
-    cout << "?????: " << celsius << endl;
+    cout << "攝氏溫度為: " << celsius << endl;
     hallo("world");
     return 0;
 }
