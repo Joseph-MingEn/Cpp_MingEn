@@ -2,34 +2,36 @@
 using namespace std;
 
 int Case(int i) {
-    switch (i) {
-        case 1:
-            return 101;
-        
-        case 2:
-            return 129;
-        
-        case 3:
-            return 119;
-        
-        case 4:
-            return 139;
-        default:
-            cout << "®æ¦¡¿ù»~¡A§A¥L¶ı¬O¤K¤C¶Ü" << '\n' << "½Ğ­«·s¿é¤J:";
-            int j;
-            cin >> j;
-            return Case(j);
-        }
-}
-int main(){
-    int ans = 0;
-    char c = 'y';
-    while(c == 'y' || c == 'Y'){
-        cout << "½Ğ°İ­nÂI´X¸¹À\(1:³Á§JÂû, 2:³Á¯ÜÂû, 3:¤j³Á§J, 4:«l»¶Âû):";
-        cin >> ans;
-        int price = Case(ans);
-        cout << "»İ­n" << price << "¤¸" << '\n' << "ÁÙ­nÄ~ÄòÂIÀ\¶Ü?(y/n):";
-        cin >> c;       
+	switch (i) {
+	case 1:
+		return 101;
 
-    }
+	case 2:
+		return 129;
+
+	case 3:
+		return 119;
+
+	case 4:
+		return 139;
+	default:
+		cout << "æ ¼å¼éŒ¯èª¤ï¼Œä½ ä»–åª½æ˜¯å…«ä¸ƒå—" << '\n' << "è«‹é‡æ–°è¼¸å…¥:";
+		int j;
+		cin >> j;
+		return Case(j);
+	}
+}
+int main() {
+	int ans = 0, total = 0;
+	char c = 'y';
+	while (c == 'y' || c == 'Y') {
+		cout << "è«‹å•è¦é»å¹¾è™Ÿé¤(1:éº¥å…‹é›, 2:éº¥è„†é›, 3:å¤§éº¥å…‹, 4:å‹è¾£é›):";
+		cin >> ans;
+		int price = Case(ans);
+		total += price;
+		cout << "éœ€è¦" << price << "å…ƒ" << '\n' << "é‚„è¦ç¹¼çºŒé»é¤å—?(y/n):";
+		cin >> c;
+
+	}
+	cout << "ä¸€å…±éœ€è¦" << total << "å…ƒ";
 }
