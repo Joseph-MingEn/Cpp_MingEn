@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+1
 double fahrenheitToCelsius(double fahrenheit) {
     return (fahrenheit - 32) * 5.0 / 9.0;
 }
