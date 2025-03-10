@@ -18,7 +18,7 @@ int main() {
         }
     }
     if(count == 3) {
-        cout << "?????????？" << endl;
+        cout << "你是天才嗎?" << endl;
     }
 
     return 0;
