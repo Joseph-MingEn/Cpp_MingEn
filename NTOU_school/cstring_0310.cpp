@@ -1,15 +1,15 @@
 #include<iostream>
-#include<string>
+#include<cstring>
 using namespace std;
 
 int main() {
-    string pw = "NTOU0101";
+    const char pw[] = "NTOU0101";
     int count = 0;
     while(count < 3) {
-        string input;
+        char input[60];
         cout << "Please enter the password: ";
-        cin >> input;
-        if(input == pw) {
+        cin.getline(input, 60);
+        if(strcmp(input, pw) == 0) {
             cout << "Correct password!" << endl;
             break;
         } else {
