@@ -16,14 +16,13 @@ int main() {
 			continue;
 		}
 
-		if (idStr.substr(1, 9).find_first_not_of(num) == string::npos) {
+		if(idStr.substr(0, 6).find_first_not_of(num) == string::npos) {
 			isID = true;
-		}
-		else {
+		}else {
 			cout << "請輸入正確的數字格式" << endl;
 		
 		}
-	} while (!isID);
+	} while(!isID);
 
 	
 }
