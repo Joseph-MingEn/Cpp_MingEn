@@ -7,7 +7,7 @@ public:
 	stack() {
 		sp = 0;
 	}
-	void push(int n);
+	void push(T data);
 	T pop();
 	bool isEmpty();
 
@@ -22,8 +22,7 @@ private:
 };
 
 template<class T, int SIZEMAX>
-
-void stack<T, SIZEMAX>::push(int data) {
+void stack<T, SIZEMAX>::push(T data) {
 	if (sp >= SIZEMAX) {
 		overERROR();
 
@@ -57,24 +56,24 @@ bool stack<T, SIZEMAX>::isEmpty() {
 	}
 }
 
-template<class T, int SIZEMAX>
 int main() {
+	
 	stack<int> st1;
-	st1.push(123);
+	st1.push(1);	st1.push(2);	st1.push(3);
 	cout << st1.pop() << endl;
-	for (int i = 0; i < SIZEMAX + 1; i++) {
-		int a;
-		cin >> a;
-		st1.push(a);
-	}
-	for (int i = 0; i < SIZEMAX + 1; i++) {
-		// bool emtly = isEmpty();
-		if (st1.isEmpty() == true) {
+	cout << st1.pop() << endl;
+	cout << st1.pop() << endl;
+	
+	stack<char, 5> st2;
+	st2.push('a'); st2.push('b'); st2.push('c'); st2.push('d'); st2.push('e');
+	st2.push('f');
+	for (int i = 0; i < 6; i++) {
+		cout << st2.pop() << endl;
+		if (st2.isEmpty() == true) {
 			cout << "emptyERROR" << endl;
 			break;
 
 		}
-
-		cout << st1.pop() << endl;
 	}
+	
 }
