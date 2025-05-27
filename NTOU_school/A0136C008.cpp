@@ -1,9 +1,9 @@
 #include <iostream>
-#include "A06C008.h"
+#include "A0136C008.h"
 using namespace std;
 
 int main() {
-	Person p("涂名恩", male, 19, "通訊1A 0136C008");
+	Person p("TuMingEn", male, 19, "�q�T1A 0136C008");
 
 	p.show();
 }

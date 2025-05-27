@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	fstream file1;
-	file1.open("C:\\Users\\user\\Desktop\\test.txt");
+	file1.open("C:\\Users\\User\\Documents\\GitHub\\C++\\NTOU_school\\test.txt");
 	if (!file1) {
 		cerr << "失敗" << endl;
 
