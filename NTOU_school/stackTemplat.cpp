@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-template<class T, int SIZEMAX = 20>
+template<class T, int SizeMax = 8>
 class stack {
 public:
 	stack() {
@@ -13,7 +13,7 @@ public:
 
 private:
 	int sp;
-	T buffet[SIZEMAX];
+	T buffet[SizeMax];
 	static void overERROR() {
 		cout << "overERROR" << endl;
 
@@ -21,9 +21,9 @@ private:
 
 };
 
-template<class T, int SIZEMAX>
-void stack<T, SIZEMAX>::push(T data) {
-	if (sp >= SIZEMAX) {
+template<class T, int SizeMax>
+void stack<T, SizeMax>::push(T data) {
+	if (sp >= SizeMax) {
 		overERROR();
 
 	}
@@ -33,8 +33,8 @@ void stack<T, SIZEMAX>::push(T data) {
 	}
 }
 
-template<class T, int SIZEMAX>
-T stack<T, SIZEMAX>::pop() {
+template<class T, int SizeMax>
+T stack<T, SizeMax>::pop() {
 	if (sp == 0) {
 		return -1;
 	}
@@ -44,8 +44,8 @@ T stack<T, SIZEMAX>::pop() {
 	}
 }
 
-template<class T, int SIZEMAX>
-bool stack<T, SIZEMAX>::isEmpty() {
+template<class T, int SizeMax>
+bool stack<T, SizeMax>::isEmpty() {
 	if (sp == 0) {
 		return true;
 

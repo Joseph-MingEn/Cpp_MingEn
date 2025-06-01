@@ -14,7 +14,7 @@ int main() {
             cout << "idStr.length() != 10" << endl;
             continue;
         }
-        if(((idStr[0] - 'A') <= 25 or (idStr[0] - 'a') <= 25) and ((idStr[0] - 'A') >= 0 or (idStr[0] - 'a') >= 0)) {
+        if(isalpha(idStr[0])) {
             if(islower(idStr[0])) {
                 idStr[0] = toupper(idStr[0]);
             }
