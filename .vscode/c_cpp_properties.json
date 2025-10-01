@@ -1,33 +1,31 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "Win64",
             "includePath": [
-                "${workspaceRoot}",
-                "C:\\MinGW\\include",
-                "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include",
-                "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++"
+                "${workspaceFolder}/**",
+                "C:/mingw64/include",
+                "C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
+                "C:/mingw64/include/c++/15.2.0"
             ],
             "defines": [
                 "_DEBUG",
-                "UNICODE",
-                "__GNUC__=5",
-                "__cdecl=__attribute__((__cdecl__))"
+                "UNICODE"
             ],
             "intelliSenseMode": "windows-gcc-x64",
             "browse": {
                 "path": [
-                    "${workspaceRoot}",
-                    "C:\\MinGW\\include",
-                    "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include",
-                    "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++"
+                    "${workspaceFolder}/**",
+                    "C:/mingw64/include",
+                    "C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
+                    "C:/mingw64/include/c++/15.2.0"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "compilerPath": "C:/mingw64/bin/g++.exe",
             "cStandard": "c11",
-            "cppStandard": "c++11"
+            "cppStandard": "c++20"
         }
     ],
     "version": 4
